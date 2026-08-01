@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(235, 243, 250);
+    border-bottom: 1px solid #850707;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo h1 {
+    font-family: cursive;
+    font-size: 30px;
+    color: #850707;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobileNav {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mobileNav a {
+    text-decoration: none;
+}
+
+.mobileNav li {
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(242, 231, 231);
+    line-height: 25px;
+}
+
+.menuIcon {
+    display: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #850707;
+}
+nav ul a:hover {
+    color: #e18e8e;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.contactMeButton {
+    background-color: #850707;
+    color: white;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    height: 80vh;
+}
+
+.heroSection img {
+    border: 5px dashed #850707;
+    border-radius: 40%;
+}
+
+.heroText {
+    font-size: 20px;
+    color: #850707;
+}
+
+.heroText p {
+    margin-bottom: 5px;
+}
+
+
+.heroText h3 {
+    margin-top: 20px;
+}
+
+.serviceSection {
+    background-color: azure;
+    height: 100vh;
+    padding: 20px;
+    margin: 30px;
+}
+
+.serviceSection h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #850707;
+}
+
+.Cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Cards div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #850707;
+    color: white;
+    height: 150px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.Cards div:hover {
+    background-color: blueviolet;
+}
+
+.Cards div img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.toolSection {
+    background-color: azure;
+    height: 50vh;
+    padding: 20px;
+    margin: 30px;
+}
+
+.toolSection h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #850707;
+    margin-bottom: 20px;
+}
+
+.toolSection p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contactSection {
+    background-color: azure;
+    height: 100vh;
+    padding: 20px;
+    margin: 30px;
+}
+
+.contactSection h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #850707;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #850707;
+    color: white;
+    border: none;
+    width: 70%;
+}
+
+input::placeholder {
+    color: white;
+    font-style: italic;
+
+}
+
+textarea {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e18e8e;
+    color: white;
+    border: none;
+    width: 70%;
+    height: 100px;
+}
+
+button {
+    background-color: #850707;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #e18e8e;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #850707;
+    color: white;
+    height: 10vh;
+}
+
+@media (max-width: 470px) {
+
+.menuIcon {
+    display: block;
+    cursor: pointer;
+}
+
+nav ul {
+    display: none;
+}
+.logo h1 {
+    font-size: 24px;
+}
+.heroSection {
+    flex-direction: column;
+    margin: 15px;
+    height: auto;
+}
+
+.heroText {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Cards div {
+    height: 150px;
+    width: 100%;
+}
+
+.toolSection {
+    height: auto;
+    padding: 10px;
+    margin: 15px;
+}
+
+.serviceSection {
+    height: auto;
+    padding: 10px;
+    margin: 15px;
+}
+
+.contactSection {
+    height: auto;
+    padding: 10px;
+    margin: 15px;
+}
+.contactSection {
+    height: auto;
+    padding: 10px;
+    margin: 15px;
+}
+
+form {
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+}
+input {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+}
+
+.mobileVisible {
+    max-height: 250px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in;
+}
+}
+
+.whatsapp {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    width: 30%;
+    cursor: pointer;
+}
+
+.whatsapp a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.whatsapp a:hover {
+
+}
